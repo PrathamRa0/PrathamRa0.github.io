@@ -7,5 +7,13 @@ Made a Portfolio Website which contains a summary of all my projects, skillsets 
 * CSS
 * Javascript
 
+## Sections: ##
+* Home
+* About Me
+* Education
+* Skills
+* Contact Me
+
+
 
 
