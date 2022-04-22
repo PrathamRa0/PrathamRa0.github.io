@@ -1,98 +1,322 @@
 <!DOCTYPE html>
-<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <title> Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="" />
+  <meta property="og:title" content="Pratham Deepak Rao" />
+  <meta property="og:url" content="https://PrathamRa0.github.io/" />
+  <meta property="og:description"
+    content=" ." />
+   
+  <meta property="profile:username" content="Pratham Deepak Rao" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Pratham Deepak Rao" />
+  <meta name="twitter:url" content="https://PrathamRa0.github.io/" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Pratham Rao</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/e7ae6f3064.js" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGHS47CX63"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-MGHS47CX63');
+  </script>
+</head>
+
 <body>
-  <!-- Move to up button -->
-  <div class="scroll-button">
-    <a href="#home"><i class="fas fa-arrow-up"></i></a>
-  </div>
-  <!-- navgaition menu -->
-  <nav>
-    <div class="navbar">
-      <div class="logo"><a href="#">Pratham</a></div>
-      <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <h2><a href="#" class="nav_logo">Pratham Rao</a></h2>
 
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <div class="cancel-btn">
-            <i class="fas fa-times"></i>
-          </div>
-      </ul>
-      <div class="media-icons">
-        <a href="https://github.com/PrathamRa0" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/pratham-rao-326b00210/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list grid">
+          <li class="nav_item">
+            <a href="#home" class="nav_link active-link">
+              <i class="uil uil-estate nav_icon"></i> Home
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#about" class="nav_link">
+              <i class="uil uil-user nav_icon"></i>About
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#skills" class="nav_link">
+              <i class="uil uil-file-alt nav_icon"></i>Skills
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#experience" class="nav_link">
+              <i class="uil uil-graduation-cap nav_icon"></i>Experience
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#events" class="nav_link">
+              <i class="uil uil-apps nav_icon"></i>Events
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#projects" class="nav_link">
+              <i class="uil uil-scenery nav_icon"></i>Projects
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav_close" id="nav-close"></i>
       </div>
-    </div>
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </div>
-  </nav>
 
-<!-- Home Section Start -->
- <section class="home" id="home">
-   <div class="home-content">
-     <div class="text">
-       <div class="text-one">Hello,</div>
-       <div class="text-two">I'm Pratham Rao</div>
-       <div class="text-three">
-        <span class="typewriter"></span>
-       </div>
-       <div class="text-four"></div>
-     </div>
-     <div class="button">
-       <a href="#contact"><button>Contact Me <i class=" fa fa-regular fa-phone"></i></button></a>
-     </div>
-   </div>
- </section>
+      <div class="nav_btns">
+        <!-- Change Theme -->
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-<!-- About Section Start -->
-<section class="about" id="about">
-  <div class="content">
-    <div class="title"><span>About Me</span></div>
-  <div class="about-details">
-    <div class="left">
-      <img src="images/pp.jpg" alt="">
-    </div>
-    <div class="right">
-      <div class="topic">Coding Is My Passion</div>
-      <p>
-        Hello There!, I am Pratham Deepak Rao currently pursuing B.Tech 
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- Home -->
+    <section class="home section" id="home">
+      <div class="home_container container grid">
+        <div class="home_content grid">
+          <div class="home_social">
+            <a href="https://www.linkedin.com/in/pratham-rao-326b00210/" class="home_social-icon" target="_blank">
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+
+            <a href="https://github.com/PrathamRa0" class="home_social-icon" target="_blank">
+              <i class="uil uil-github-alt"></i>
+            </a>
+
+            <a href="https://www.hackerrank.com/pr14rao?hr_r=1" class="home_social-icon" target="_blank">
+              <i class="fab fa-hackerrank"></i>
+            </a>
+          </div>
+
+          <div class="home_img">
+             
+          </div>
+
+          <div class="home_data">
+            <h1 class="home_title">Hello, I'm Pratham</h1>
+            <h3 class="home_subtitle">
+              <span class="typewriter"></span>
+            </h3>
+
+             
+            <a href="#contact" class="button button--flex">
+              Contact Me&nbsp;&nbsp;
+              <i class="uil uil-message"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <h2 class="section_title">About Me</h2>
+      <span class="section_subtitle"></span>
+      <div class="about_container container grid">
+        <img src="assets\img\about_img.jpg" class="about_img" />
+        <div class="about_data">
+          <p class="about_description">
+            Hello There!, I am Pratham Deepak Rao currently pursuing B.Tech 
         at PES University Ring Road Campus, Bangalore, Karnataka. Keenly interested in 
         Tech and finance domain. Looking forward for internships and good job oppurtunities.
-      </p>
-      <div class="button">
-        <a href="blob:https://www.resume.com/521c8e1b-037d-4c0b-b8fb-04d185e465c0" target="_blank"><button>Download CV</button></a>
+          </p>
+          <div class="about_button">
+            <a download="" href="assets\pdf\Eng_Resume.pdf" class="button button--flex">
+              My Resume<i class="uil uil-file-download-alt button_icon"></i>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  </div>
-</section>
+    </section>
 
-<!-- Educational Section and Experiences -->
-<section class="education" id="">
-  <div class="content">
-    <div class="title"><span><i class="fa fa-graduation-cap"></i>Education</span></div>
+    <!-- Skills -->
+    <section class="skills section" id="skills">
+      <h1 class="section_title">Skills</h1>
+      <span class="section_subtitle"></span>
+      <div class="skills_container container grid">
+        <!-- Skill Set 1 -->
+        <div class="skill skills_content">
+          <div class="skills_header">
+            <i class="uil uil-arrow skills_icon"></i>
+
+            <div>
+              <h1 class="skills_title">Languages</h1>
+              <span class="skills_subtitle"></span>
+            </div>
+
+            <i class="uil uil-angle-down skills_arrow"></i>
+          </div>
+
+          <div class="skills_list grid">
+            <div class="skills_data">
+              <div class="skills_titles">
+                <span class="single_skill_icon">
+                  <i class="fab fa-cuttlefish"></i>
+                </span>
+                <h3 class="skills_name">C</h3>
+              </div>
+              <div class="skills_bar"></div>
+            </div>
+
+            <div class="skills_data">
+              <div class="skills_titles">
+                <span class="single_skill_icon">
+                  <i class="fas fa-code"></i>
+                </span>
+                <h3 class="skills_name">C++</h3>
+              </div>
+              <div class="skills_bar"></div>
+            </div>
+
+            <div class="skills_data">
+              <div class="skills_titles">
+                <span class="single_skill_icon">
+                  <i class="fab fa-python"></i>
+                </span>
+                <h3 class="skills_name">Python</h3>
+              </div>
+              <div class="skills_bar"></div>
+            </div>
+
+
+            <div class="skills_data">
+              <div class="skills_titles">
+                <span class="single_skill_icon">
+                  <i class="fab fa-html5"></i>
+                </span>
+                <h3 class="skills_name">HTML</h3>
+              </div>
+              <div class="skills_bar"></div>
+            </div>
+
+            <div class="skills_data">
+              <div class="skills_titles">
+                <span class="single_skill_icon">
+                  <i class="fab fa-css3-alt"></i>
+                </span>
+                <h3 class="skills_name">CSS</h3>
+              </div>
+              <div class="skills_bar"></div>
+            </div>
+
+            <div class="skills_data">
+              <div class="skills_titles">
+                <span class="single_skill_icon">
+                  <i class="fab fa-js"></i>
+                </span>
+                <h3 class="skills_name">JavaScript</h3>
+              </div>
+              <div class="skills_bar"></div>
+            </div>
+
+            <div class="skills_data">
+              <div class="skills_titles">
+                <span class="single_skill_icon">
+                  <i class="fab fa-java"></i>
+                </span>
+                <h3 class="skills_name"> Basics of Java</h3>
+              </div>
+              <div class="skills_bar"></div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Skill Set 3 -->
+        <div class="skill skills_content">
+          <div class="skills_header">
+            <i class="uil uil-wrench skills_icon"></i>
+
+            <div>
+              <h1 class="skills_title">Tools</h1>
+              <span class="skills_subtitle"></span>
+            </div>
+
+            <i class="uil uil-angle-down skills_arrow"></i>
+          </div>
+
+          <div class="skills_list grid">
+             
+
+            <div class="skills_data">
+              <div class="skills_titles">
+                <span class="single_skill_icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <h3 class="skills_name">GitHub</h3>
+              </div>
+              <div class="skills_bar"></div>
+            </div>
+
+             
+
+            <div class="skills_data">
+              <div class="skills_titles">
+                <span class="single_skill_icon">
+                  <i class="fas fa-code"></i>
+                </span>
+                <h3 class="skills_name">VS Code</h3>
+              </div>
+              <div class="skills_bar"></div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Qualifications -->
+    <section class="qualification section" id="experience">
+      <h2 class="section_title">Experience</h2>
+      <span class="section_subtitle">My Qualification & Experience</span>
+
+      <div class="qualification_container container">
+        <div class="qualification_tabs">
+          <div class="qualification_button button-flex" id="educationheader">
+            <i class="uil uil-graduation-cap qualification_icon"></i>Education
+          </div>
+
+          <div class="qualification_button button-flex" id="workheader">
+            <i class="uil uil-briefcase-alt qualification_icon"></i>Work
+          </div>
+
+          <div class="qualification_button button-flex" id="volunteeringheader">
+            <i class="uil uil-user qualification_icon"></i>Volunteering
+          </div>
+        </div>
+
+        <div class="qualification_sections">
           <!-- Educational Qualification -->
           <div class="qualification_content qualification_active" data-content id="education">
 
             <div class="qualification_data">
-              <div class="quali_info">
-                <h3>B.Tech, CSE</h3>
+              <div>
+                <h3 class="qualification_title">B.Tech, CSE</h3>
                 <span class="qualification_subtitle">PES
-                  University, Bangalore</span>
+                  University, Ring Road Campus, Bangalore</span>
                 <div class="qualification_calendar">
+                  <i class="uil uil-calendar-alt"></i>
                   2020 - Present
                 </div>
               </div>
@@ -108,20 +332,22 @@
                 <span class="qualification_circle"></span>
                 <span class="qualification_line"></span>
               </div>
-              <div class="quali_info_right">
-                <h3>Pre-University</h3>
+              <div>
+                <h3 class="qualification_title">High School</h3>
                 <span class="qualification_subtitle">Expert Pre-University College, Valachil</span>
                 <div class="qualification_calendar">
+                  <i class="uil uil-calendar-alt"></i>
                   2018 - 2020
                 </div>
               </div>
             </div>
 
             <div class="qualification_data">
-              <div class="quali_info">
-                <h3 class="qualification_title">10th Standard</h3>
+              <div>
+                <h3 class="qualification_title">8th - 10th Grade</h3>
                 <span class="qualification_subtitle">Indian School Sohar, Oman</span>
                 <div class="qualification_calendar">
+                  <i class="uil uil-calendar-alt"></i>
                   2016 - 2018
                 </div>
               </div>
@@ -135,206 +361,411 @@
               <div></div>
               <div>
                 <span class="qualification_circle"></span>
+                 
               </div>
-              <div class="quali_info_right">
-                <h3>Upto 9th Standard</h3>
-                <span class="qualification_subtitle">Kokilaben Dhirubhai Ambani Vidyamandir, KDAV, Gujarat</span>
+              <div>
+                <h3 class="qualification_title">Upto 8th Grade</h3>
+                <span class="qualification_subtitle">Kokilaben Dhirubhai Ambani Vidyamandir, KDAV, Jamnagar, Gujarat</span>
                 <div class="qualification_calendar">
-                  2008 - 2016
+                  <i class="uil uil-calendar-alt"></i>
+                  2013 - 2015
                 </div>
               </div>
             </div>
 
+            
+               
+            </div>
+          </div>
 
-<!-- My Skill Section Start -->
-<!-- Section Tag and Other Div will same where we need to put same CSS -->
-<section class="skills" id="skills">
- <div class="content">
-   <div class="title"><span>My Skills</span></div>
-   <div class="skills-details">
-     <div class="text">
-       <div class="topic">Skills Reflects Our Knowledge</div>
-       <p>
-        I aspire to become a professional Software Engineer in the Artificial Intelligence and Machine
-        Learning space. My technical skills include Python, C, HTML, Basics of Java and C++. I believe in building positive
-        relationships with my peers with respect, dignity and humility.        
-       </p>
-       <div class="experience">
-         <div class="num"></div>
-         <div class="exp"><br></div>
-       </div>
-     </div>
-     <div class="boxes">
-       <div class="box">
-         <div class="topic">HTML</div>
-         <div class="per"></div>
-       </div>
-       <div class="box">
-         <div class="topic">Python</div>
-         <div class="per"></div>
-       </div>
-       <div class="box">
-         <div class="topic">C++</div>
-         <div class="per"></div>
-       </div>
-       <div class="box">
-         <div class="topic">Basics of Java</div>
-         <div class="per"></div>
-       </div>
-     </div>
-   </div>
- </div>
-</section>
+          <!-- Work Experience -->
+          <div class="qualification_content qualification-inactive" data-content id="work">
 
-<!--Events-->
-<!--
-  <section class="events" id="events">
-  <div class="content">
-    <h2 class="section_title">Events and Competitions</h2>
-  <span class="section_subtitle">Organised Events and Competitions</span>
+            <div class="qualification_data">
+              <div></div>
+              <div>
+                <span class="qualification_circle"></span>
+                 
+              </div>
+              <div>
+                <h3 class="qualification_title">Head of Stocks Domain</h3>
+                <span class="qualification_subtitle">The Trading HUB, CSE</span>
+                <div class="qualification_calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  Sep 2021 - Present
+                </div>
+              </div>
+            </div>
 
-  <div class="portfolio_container container swiper-container swiper mySwiper">
-    <div class="swiper-wrapper">
+          </div>
 
-      <div class="portfolio_content grid swiper-slide">
-        <img src="assets\img\Event_images\Begin With C IG Post.png" alt="" class="portfolio_img">
+             
 
-        <div class="portfolio_data">
-          <h3 class="portfolio_title">
-            Begin with C 2021
-          </h3>
-          <p class="portfolio_description">
-            <b>Sept 25th - Sept 29th 2021</b><br>
-            An online C programming workshop was organised to provide hands-on experience to newbies in coding with
-            C Language.
-          </p>
+             
+
+            
+
+            <!--Volunteering-->
+
+          <div class="qualification_content qualification_inactive" data-content id="volunteering">
+
+            <div class="qualification_data">
+              <div>
+                <h3 class="qualification_title">CSR Club, PESU </h3>
+                <span class="qualification_subtitle">Volunteer</span>
+                <div class="qualification_calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  Oct 2021 - Present
+                </div>
+              </div>
+              <div>
+                <span class="qualification_circle"></span>
+                 
+              </div>
+            </div>
+            </div>
+
+          </div>
         </div>
       </div>
+    </section>
+    <!--Events-->
+    <section class="portfolio section" id="events">
+      <h2 class="section_title">Events and Certifications</h2>
+      <span class="section_subtitle"></span>
 
-      <div class="portfolio_content grid swiper-slide">
-        <img src="assets\img\Event_images\PyChamp 2021 IG Post.png" alt="" class="portfolio_img">
+      <div class="portfolio_container container swiper-container swiper mySwiper">
+        <div class="swiper-wrapper">
 
-        <div class="portfolio_data">
-          <h3 class="portfolio_title">
-            PyChamp 2021
-          </h3>
-          <p class="portfolio_description">
-            <b>June 15th - June 19th 2021</b><br>
-            Online Python programming workshop was organised to enable students to code with python and kickstart
-            their ideas.
-          </p>
-          <a href="https://www.instagram.com/tv/CQgXMqclrE7/?utm_source=ig_web_copy_link"
-            class="button button-flex button-small portfolio_button" target="_blank">
-            Check out the glimpse
-            <i class="uil uil-arrow-right button_icon"></i>
+          <div class="portfolio_content grid swiper-slide">
+            <img src="assets\img\c_prog.jpg" alt="" class="portfolio_img">
+
+            <div class="portfolio_data">
+              <h3 class="portfolio_title">
+                C Programming: Getting Started
+              </h3>
+              <p class="portfolio_description">
+                <b>Sept 8th - Oct 20th 2020</b><br>
+                successfully completed and received a passing grade in
+                C Programming: Getting Started
+                a course of study offered by Dartmouth_IMTx, an online learning initiative of Dartmouth & IMT.
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio_content grid swiper-slide">
+            <img src="assets\img\py_cer.jpg" alt="" class="portfolio_img">
+
+            <div class="portfolio_data">
+              <h3 class="portfolio_title">
+                Python Basics for Data Science
+              </h3>
+              <p class="portfolio_description">
+                <b>Sep 18th - Oct 11th 2020</b><br>
+                successfully completed and received a passing grade in
+                PY0101EN: Python Basics for Data Science
+                a course of study offered by IBM, an online learning initiative of IBM.
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio_content grid swiper-slide">
+            <img src="assets\img\html_cer.jpg" alt="" class="portfolio_img">
+
+            <div class="portfolio_data">
+              <h3 class="portfolio_title">
+                HTML Course
+              </h3>
+              <p class="portfolio_description">
+                <b>Apr 27th - May 18th 2021</b><br>
+                successfully completed the HTML course which included essence of CSS and Javascript.
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio_content grid swiper-slide">
+            <img src="assets\img\Event_images\CodeQuiz 2021 Poster.png" alt="" class="portfolio_img">
+
+            <div class="portfolio_data">
+              <h3 class="portfolio_title">
+                ISFCR Hackathon 2021
+              </h3>
+              <p class="portfolio_description">
+                <b>Add the date when you get to know</b><br>
+                a 24 hour hackathon which included events like Capture the Flag (CTF), decrypt and encrypt, and also
+                forensics related cybersecurity domain stuff conducted by ISFCR Club PESU
+              </p>
+            </div>
+          </div>
+
+           
+          
+        </div>
+
+        <!-- Arrows -->
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+    <section class="portfolio section" id="projects">
+      <h2 class="section_title">Projects</h2>
+      <span class="section_subtitle"></span>
+
+      <div class="portfolio_container container swiper-container swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <!-- Project 1 -->
+          <div class="portfolio_content grid swiper-slide">
+            <img src="assets\img\Project_images\Solving CSP using RAT.gif" alt="" class="portfolio_img">
+
+            <div class="portfolio_data">
+              <h3 class="portfolio_title">
+                Pneumonia Detector
+              </h3>
+              <p class="portfolio_description">
+                <b>2021</b><br>
+                The machine is trained using a deep convolutional network layer to get the significant differences 
+                between a normal patient and a patient suffering from Pneumonia.
+               </p>
+              <a href="https://github.com/PrathamRa0/Pneumonia-Detector"
+                class="button button-flex button-small portfolio_button" target="_blank">
+                Check out
+                <i class="uil uil-arrow-right button_icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio_content grid swiper-slide">
+            <img src="assets\img\Project_images\AgriBot.jpeg" alt="" class="portfolio_img">
+
+            <div class="portfolio_data">
+              <h3 class="portfolio_title">
+                 Sanitisation Robot 
+              </h3>
+              <p class="portfolio_description">
+                <b>2021</b><br>
+                 Made a Sanitisation Robot prototype for <b>Cisco ThingQbator Program</b> Cohort-4. The idea was to 
+                 eradicate manual Sanitisation, as many frontline workers are affected due to it and hence making the 
+                 process completely automated.
+              </p>
+              <a href="https://drive.google.com/file/d/1hG04nfVfblZTn5yl2C-wPaUzBJTSu25j/view?usp=sharing"
+                class="button button-flex button-small portfolio_button" target="_blank">
+                Check out
+                <i class="uil uil-arrow-right button_icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="portfolio_content grid swiper-slide">
+            <img src="assets\img\Project_images\iCityMangaluru App.jpg" alt="" class="portfolio_img">
+
+            <div class="portfolio_data">
+              <h3 class="portfolio_title">
+                Whatsapp Clone using React
+              </h3>
+              <p class="portfolio_description">
+                <b>2022</b><br>
+                Working on it...
+              </p>
+              <a href="https://sites.google.com/view/sarthakskumar/i-city-mangaluru"
+                class="button button-flex button-small portfolio_button" target="_blank">
+                Check out
+                <i class="uil uil-arrow-right button_icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+           
+
+          <!-- Project 4 -->
+           
+
+          <!-- Project 5 -->
+           
+
+          <!-- Project 6 -->
+           
+
+        </div>
+
+        <!-- Arrows -->
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section class="portfolio section" id="awards">
+      <h2 class="section_title">Awards</h2>
+      <span class="section_subtitle"></span>
+
+      <div class="portfolio_container container swiper-container swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="portfolio_content grid swiper-slide">
+            <img src="assets\img\Awards_images\RotoQuiz 2021.jpg" alt="" class="portfolio_img">
+            <div class="portfolio_data">
+              <h3 class="portfolio_title">
+                Prof. MRD Scholarship
+              </h3>
+              <p class="portfolio_description">
+                Recieved the meritorious Professor MRD Scholarship, which is given
+                to the top 20% of the students in the batch in PESU.
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio_content grid swiper-slide">
+            <img src="assets\img\Awards_images\Chem Connect 2020.jpg" alt="" class="portfolio_img">
+            <div class="portfolio_data">
+              <h3 class="portfolio_title">
+                 
+              </h3>
+              <p class="portfolio_description">
+                 </p>
+            </div>
+          </div>
+
+ 
+
+        </div>
+        <!-- Arrows -->
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </section>
+     
+    <!-- Contact Me -->
+    <section class="contact section" id="contact">
+      <h1 class="section_title">Contact Me</h1>
+      <span class="section_subtitle">
+      </span>
+
+      <div class="contact_container container grid">
+        <div>
+          <a href="mailto:sskworld9742@gmail.com" target="_blank">
+            <div class="contact_info">
+              <i class="uil uil-envelope-alt contact_icon"></i>
+              <div>
+                <h3 class="contact_title">Email</h3>
+                <span class="contact_subtitle">pratham.rao62@gmail.com</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://instagram.com/sarthakskumar" target="_blank">
+            <div class="contact_info">
+              <i class="uil uil-instagram contact_icon"></i>
+              <div>
+                <h3 class="contact_title">Instagram</h3>
+                <span class="contact_subtitle">@pratham_rao14</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://goo.gl/maps/urfTie1z58rKJRys5" target="_blank">
+            <div class="contact_info">
+              <i class="uil uil-location-point contact_icon"></i>
+              <div>
+                <h3 class="contact_title">Location</h3>
+                <span class="contact_subtitle">Bangalore, India</span>
+              </div>
+            </div>
           </a>
         </div>
+
+        <form action="https://formspree.io/f/mzbozljr" class="contact_form grid" id="contact-form" method="POST">
+          <div id="alert" class="alert_style"></div>
+          <div class="contact_inputs grid">
+            <div class="contact_content">
+              <label class="contact_label">Name</label>
+              <input type="text" name="name" class="contact_input" id="name" required>
+            </div>
+            <div class="contact_content">
+              <label for="email" class="contact_label">Email</label>
+              <input type="email" name="email" class="contact_input" id="email" required>
+            </div>
+          </div>
+          <div class="contact_content">
+            <label for="subject" class="contact_label">Subject</label>
+            <input type="text" name="subject" class="contact_input" id="subject" required>
+          </div>
+          <div class="contact_content">
+            <label for="message" class="contact_label">Message</label>
+            <textarea name="message" id="" cols="0" rows="7" class="contact_input message" id="message"
+              required></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="button button-flex">
+              Send Message
+              <i class="uil uil-message button_icon"></i>
+            </button>
+          </div>
+        </form>
+
       </div>
+    </section>
+  </main>
 
-      <div class="portfolio_content grid swiper-slide">
-        <img src="assets\img\Event_images\Hands On PCB IG Post.png" alt="" class="portfolio_img">
-
-        <div class="portfolio_data">
-          <h3 class="portfolio_title">
-            Hands on PCB
-          </h3>
-          <p class="portfolio_description">
-            <b>May 28th 2021</b><br>
-            Workshop on circuit designing using Autodesk Eagle. Students were exposed to PCB Production and the
-            entire process of fabrication, and also developed their own arduino clone.
-          </p>
-          <a href="https://www.instagram.com/tv/CPfn4LglIi3/?utm_source=ig_web_copy_link"
-            class="button button-flex button-small portfolio_button" target="_blank">
-            Check out the glimpse
-            <i class="uil uil-arrow-right button_icon"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="portfolio_content grid swiper-slide">
-        <img src="assets\img\Event_images\CodeQuiz 2021 Poster.png" alt="" class="portfolio_img">
-
-        <div class="portfolio_data">
-          <h3 class="portfolio_title">
-            CodeQuiz 2021
-          </h3>
-          <p class="portfolio_description">
-            <b>May 15th 2021</b><br>
-            An Online Coding Quiz was conducted on 15th May at the state level. Students from different parts of the
-            state took part in this event and put their coding skills to test.
-          </p>
-          <a href="https://www.instagram.com/tv/CPD2MPbF7Al/?utm_source=ig_web_copy_link"
-            class="button button-flex button-small portfolio_button" target="_blank">
-            Check out the glimpse
-            <i class="uil uil-arrow-right button_icon"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="portfolio_content grid swiper-slide">
-        <img src="assets\img\Event_images\Learn C++ Poster.png" alt="" class="portfolio_img">
-
-        <div class="portfolio_data">
-          <h3 class="portfolio_title">
-            Learn C++ Workshop
-          </h3>
-          <p class="portfolio_description">
-            <b>May 2nd - May 7th 2021</b><br>
-            5 Day online workshop on coding with C++. A beginner-friendly 101 course on C++ language was presented
-            to the students along with certification.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
--->
-<!--
-  
-    <!-- Arrows -->
-    <div class="swiper-button-next">
-      <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-    </div>
-    <div class="swiper-button-prev">
-      <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-    </div>
-    <!-- Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-</section>
-
-
-
-
-
-<!-- Contact Me section Start -->
-<section class="contact" id="contact">
-  <div class="content">
-    <div class="title"><span>Contact Me</span></div>
-    <div class="text">
-      <div class="topic"></div>
-      <p></p>
-      <div class="button">
-        <button></button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer Section Start -->
-<!-- Footer -->
-  <section class="footer">
+  <!-- Footer -->
+  <footer class="footer">
     <div class="footer_bg">
-          <center><h1 class="footer_title">Pratham Deepak Rao</h1>
-            <span class="footer_subtitle"><b>Student at PES University</b><br>Bangalore, Karnataka, India</span></center>
-  
-      <p class="footer_copy" style="color: rgb(179, 177, 177);">Pratham Deepak Rao - 2022<br>
-      <p class="footer_copy" style="color: rgb(179, 177, 177);"><i class="fa fa-copyright"></i>Licensed under CodingLab <br>
-        
+      <div class="footer_container container grid">
+        <div>
+          <h1 class="footer_title">Pratham Rao</h1>
+          <span class="footer_subtitle"><b>Student at PES University</b><br>Bangalore, Karnataka, India</span>
+        </div>
+
+      
+
+        <div class="footer_socials">
+          <a href="https://www.linkedin.com/in/pratham-rao-326b00210/" class="footer_social" target="_blank">
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+
+          <a href="https://github.com/PrathamRa0" class="footer_social" target="_blank">
+            <i class="uil uil-github-alt"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="footer_copy" style="color: rgb(179, 177, 177);">Pratham Rao - 2022<br>Source code under MIT License
       </p>
     </div>
-  </section> 
+  </footer>
 
+  <!-- Scroll Top -->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup_icon"></i>
+  </a>
 
-  <script src="script.js"></script>
+  <!-- Swiper JS -->
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+
+  <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
